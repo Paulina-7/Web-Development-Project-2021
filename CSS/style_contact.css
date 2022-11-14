@@ -1,0 +1,110 @@
+*,*:after,*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html { 
+  width: 100%; 
+  height: 100%; 
+  overflow:hidden; 
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  margin: 0;
+  background: rgb(0, 255, 213);
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 60px;
+  color: rgb(26, 31, 31);
+}
+
+.form_box {
+  width: 600px;
+  background: rgb(151, 164, 177);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.input-row {
+  position: relative;
+  margin-bottom: 13px;
+}
+
+.form_box input:not([type="submit"],[type="checkbox"]),
+.form_box textarea,
+.form_box select {
+  width: 100%;
+  margin: 0 0 3px;
+  padding: 10px 15px;
+  font-size: 20px;
+  color: gray;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+
+.form_box textarea {
+  height: 70px;
+}
+
+.form_box input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.check_label {
+  padding-left: 25px;
+}
+
+.form_box input[type="submit"] {
+  padding: 10px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 0;
+  color: #fff;
+  background: #075680;
+}
+
+.form_box input[type="submit"]:hover {
+  background: #000;
+}
+
+.error {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  color: red;
+  display: none;
+}
+
+.title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+ 
+@media (max-width: 480px), (max-width: 767px), (max-width: 1024px), (max-width: 1280px) {
+  
+  html {
+    font-size: 50%;
+  }  
+  
+  .form_box {
+    width: 100%;
+    height: auto;
+  }
+
+}

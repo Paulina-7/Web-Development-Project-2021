@@ -1,0 +1,14 @@
+html {
+    background-color: teal;
+}
+
+body > h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: #000;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    width: 100%;
+}
