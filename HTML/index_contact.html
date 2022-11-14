@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    
+    <link rel="stylesheet" href="../Assets/css/style_contact.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Contact Me</h1>
+        <form name="custom_form" onsubmit="return validForm()" action="index_valid_contact.html">
+            <div class="form_box">
+                <div class="input-row">
+                    <input type="text" placeholder="Name*" name="name">
+                    <span class="error">Please enter your name</span>
+                </div>
+                <div class="input-row">
+                    <input type="text" placeholder="Email*" name="email">
+                    <span class="error">Please enter your email</span>
+                </div>
+                <div class="input-row">
+                    <input type="text" placeholder="Phone*" name="phone">
+                    <span class="error">Please enter your phone</span>
+                </div>
+                <div class="input-row">
+                    <select name="subject">
+                        <option value="">Subject*</option>
+                        <option value="Queries">Queries</option>
+                        <option value="Travels">Travels</option>
+                        <option value="Donations">Donations</option>
+                        <option value="Support">Support</option>
+                        <option value="Advices">Advices</option>
+                        <option value="Meetings">Meetings</option>
+                    </select>
+                    <span class="error">Please enter your subject</span>
+                </div>
+                <div class="input-row">
+                    <textarea placeholder="Message" name="message"></textarea>
+                    <span class="error">Please enter your message</span>
+                </div>
+                <div class="input-row">
+                    <label class="title">How did you find my site?</label>
+                    <input type="radio" id="good" name="rate_of_site" value="Good">
+                    <label for="good">Good</label><br>
+                    <input type="radio" id="ok" name="rate_of_site" value="OK">
+                    <label for="ok">OK</label><br>
+                    <input type="radio" id="bad" name="rate_of_site" value="Bad">
+                    <label for="bad">Bad</label>
+                </div>
+
+                <br>
+
+                <div class="input-row">
+                    <label class="check_label" for="conditions">Please accept all terms and conditions</label>
+                    <input type="checkbox" name="conditions" id="conditions">
+                    <span class="error">Please accept all terms and conditions</span>
+                </div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    
+
+<script src="../Assets/js/script_contact.js"></script>
+
+</body>
+</html>
