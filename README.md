@@ -4,6 +4,3 @@ This is my final CA project for the Web Development 1 module in the first year o
 My project is a Travel Blog website where I encourage potential users to visit four places around Poland.
 
 Grade received: 91%
-
-
-
